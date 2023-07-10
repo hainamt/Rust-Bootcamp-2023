@@ -42,8 +42,8 @@ fn exercise3() {
         let mut addition: f64 = 0.0;
 
         // Sumar valores en additions
-        for element_index in additions {
-            let addition_aux = values[element_index];
+        for element_index in &additions {
+            let addition_aux = values[*element_index];
             addition = addition_aux + addition;
         }
     }
