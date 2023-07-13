@@ -54,8 +54,7 @@ fn exercise3() {
 fn exercise4(value: u32) -> String {
     let str_value = value.to_string(); // Convert u32 to String
     let str_ref: &str = &str_value; // Obtain a reference to the String
-    let str_ref = str_ref.to_string();
-    str_ref // Return the reference to the String
+    str_ref.to_string() // Return the reference to the String
 }
 
 // Exercise 5
@@ -131,4 +130,9 @@ fn exercise8() {
         let person = add_vec[0].to_string();
         accounting.push(person);
     }
+}
+
+fn main() {
+    let mut static_ref: &'static str = "Hello, world!";
+    let my_string: &str = "Hello, world!";
 }
